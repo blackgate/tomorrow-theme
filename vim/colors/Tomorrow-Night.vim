@@ -336,6 +336,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
 
+        " HTML Highlighting
+        call <SID>X("htmlTagName", s:purple, "", "")
+        call <SID>X("htmlSpecialTagName", s:purple, "", "")
+        call <SID>X("htmlTag", s:blue, "", "")
+        call <SID>X("htmlEndTag", s:blue, "", "")
+        call <SID>X("htmlArg", s:blue, "", "")
+
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
 	call <SID>X("diffRemoved", s:red, "", "")
